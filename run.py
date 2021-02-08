@@ -63,14 +63,14 @@ def process(message,firstname,username,chatid):
 # /start
 	if "/start" in message[0]:
 		try:
-			sendMsg("@" + str(username) + " welcome. I'm the the Peak Shift @ Work Bot\n\nHere's how it works.\n\nYou can use @dogeshift_bot by messaging it directly or in a group that it is a part of.\n\nAvailable Commands\n\n/register - Registers your username with the bot\n/tip @username 10 doge - use this to tip some doge from your balance to another user\n/address - Get your deposit address\n/withdraw 100 <address> - to withdraw your balance",chatid)
+			sendMsg("@" + str(username) + " welcome. I'm the the Slp.CC @ Work Bot\n\nHere's how it works.\n\nYou can use @slp_cctipbot by messaging it directly or in a group that it is a part of.\n\nAvailable Commands\n\n/register - Registers your username with the bot\n/tip @username 10 doge - use this to tip some doge from your balance to another user\n/address - Get your deposit address\n/withdraw 100 <address> - to withdraw your balance",chatid)
 		except Exception as e:
 			print("Error : 50 : "+str(e))
 
 # /help
 	elif "/help" in message[0]:
 		try:
-			sendMsg("@" + str(username) + " welcome. I'm the the Peak Shift @ Work Bot\n\nHere's how it works.\n\nYou can use @dogeshift_bot by messaging it directly or in a group that it is a part of.\n\nAvailable Commands\n\n/register - Registers your username with the bot\n/tip @username 10 doge - use this to tip some doge from your balance to another user\n/address - Get your deposit address\n/withdraw 100 <address> - to withdraw your balance",chatid)
+			sendMsg("@" + str(username) + " welcome. I'm the the Slp.CC @ Work Bot\n\nHere's how it works.\n\nYou can use @slp_cctipbot by messaging it directly or in a group that it is a part of.\n\nAvailable Commands\n\n/register - Registers your username with the bot\n/tip @username 10 doge - use this to tip some doge from your balance to another user\n/address - Get your deposit address\n/withdraw 100 <address> - to withdraw your balance",chatid)
 		except Exception as e:
 			print("Error : 55 : "+str(e))
 
@@ -84,7 +84,7 @@ def process(message,firstname,username,chatid):
 
 # /work
 	elif "/work" in message[0]:
-		repos = ['peakshift/telegram-dogecoin']
+		repos = ['sakshameng/dogetipbot']
 		g = Github(access_token)
 		msg1 = ""
 		for rep in repos:
@@ -110,7 +110,7 @@ def process(message,firstname,username,chatid):
 		if spl[1] != None:
 			#sendMsg(spl[1],chatid)
 			g = Github(access_token)
-			repo = g.get_repo('peakshift/telegram-dogecoin')
+			repo = g.get_repo('sakshameng/dogetipbot')
 			open_issues = repo.get_issue(number=int(spl[1]))
 			#one = md.parse(open_issues.body)
 			sendMsg(open_issues.body,chatid,"markdown")
@@ -207,7 +207,7 @@ def process(message,firstname,username,chatid):
 			active_users[chatid] = {}
 			active_users[chatid][username] = time.time()
 
-print("-- Bot Started Successfully >_<")
+print("-- Bot Running Successfully >_<")
 
 while True:
 	try:
