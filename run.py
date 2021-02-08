@@ -17,7 +17,7 @@ token = '1669017030:AAFhnCjrpj_LcMS72IAKINtO_Jmp8syJqsU' #Telegram bot token
 url = "https://api.telegram.org/bot%s/" %(token)
 n = 0
 version = 2
-block_io = BlockIo(os.environ['BLOCKIO_API_KEY'], os.environ['BLOCKIO_PIN'], version)
+block_io = BlockIo('b9aa-e32c-9c0f-dd11', 'saksham89572', version)
 active_users = {}
 
 monikers_tuple  = [
