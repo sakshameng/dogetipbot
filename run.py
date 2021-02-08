@@ -11,8 +11,8 @@ from markdown_it import MarkdownIt
 
 
 os.system('clear')
-access_token = os.environ['ACCESS_TOKEN']
-token = os.environ['TELEGRAM_BOT_TOKEN'] #Telegram bot token
+access_token = '9f2debf5e433b6846b57732ee4a49690708323d3'
+token = '1669017030:AAFhnCjrpj_LcMS72IAKINtO_Jmp8syJqsU' #Telegram bot token
 
 url = "https://api.telegram.org/bot%s/" %(token)
 n = 0
@@ -63,14 +63,14 @@ def process(message,firstname,username,chatid):
 # /start
 	if "/start" in message[0]:
 		try:
-			sendMsg("@" + str(username) + " welcome. I'm the the Slp.CC @ Work Bot\n\nHere's how it works.\n\nYou can use @slp_cctipbot by messaging it directly or in a group that it is a part of.\n\nAvailable Commands\n\n/register - Registers your username with the bot\n/tip @username 10 doge - use this to tip some doge from your balance to another user\n/address - Get your deposit address\n/withdraw 100 <address> - to withdraw your balance",chatid)
+			sendMsg("@" + str(username) + " welcome. I'm the the Tip.DT @ Work Bot\n\nHere's how it works.\n\nYou can use @tipdtbot by messaging it directly or in a group that it is a part of.\n\nAvailable Commands\n\n/register - Registers your username with the bot\n/tip @username 10 doge - use this to tip some doge from your balance to another user\n/address - Get your deposit address\n/withdraw 100 <address> - to withdraw your balance",chatid)
 		except Exception as e:
 			print("Error : 50 : "+str(e))
 
 # /help
 	elif "/help" in message[0]:
 		try:
-			sendMsg("@" + str(username) + " welcome. I'm the the Slp.CC @ Work Bot\n\nHere's how it works.\n\nYou can use @slp_cctipbot by messaging it directly or in a group that it is a part of.\n\nAvailable Commands\n\n/register - Registers your username with the bot\n/tip @username 10 doge - use this to tip some doge from your balance to another user\n/address - Get your deposit address\n/withdraw 100 <address> - to withdraw your balance",chatid)
+			sendMsg("@" + str(username) + " welcome. I'm the the Tip.DT @ Work Bot\n\nHere's how it works.\n\nYou can use @tipdtbot by messaging it directly or in a group that it is a part of.\n\nAvailable Commands\n\n/register - Registers your username with the bot\n/tip @username 10 doge - use this to tip some doge from your balance to another user\n/address - Get your deposit address\n/withdraw 100 <address> - to withdraw your balance",chatid)
 		except Exception as e:
 			print("Error : 55 : "+str(e))
 
