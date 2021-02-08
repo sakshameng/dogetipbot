@@ -7,7 +7,6 @@ import json
 from github import Github
 import yaml
 import datetime
-from markdown_it import MarkdownIt
 
 
 os.system('clear')
